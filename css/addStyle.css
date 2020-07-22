@@ -269,9 +269,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    background-color: red !important;
-  }
   .contact-wrap {
     flex-wrap: unset !important;
   }
@@ -283,6 +280,10 @@
   }
   .caption h4 {
     font-size: 18px !important;
+  }
+  .tech_first_column img,
+  .tech_second_column img {
+    width: 70px;
   }
 }
 /* Technology Stack */
