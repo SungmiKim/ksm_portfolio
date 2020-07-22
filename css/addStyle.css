@@ -225,7 +225,7 @@
   width: 100px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 1024px) {
   .tech_first_column img,
   .tech_second_column img {
     width: 50px;
@@ -239,6 +239,32 @@
   }
   .svg-inline--fa {
     width: 30px;
+  }
+  .portfolio-box img {
+    height: 250px !important;
+    width: 233px;
+  }
+  .text-uppercase {
+    font-size: 2rem !important;
+  }
+  .caption h4 {
+    font-size: 22px !important;
+  }
+  .contact-content {
+    font-size: 14px !important;
+  }
+  .contact-icon {
+    font-size: 12px !important;
+  }
+  .contact-wrap {
+    flex-wrap: unset !important;
+  }
+  .tech-tool {
+    font-size: 14px !important;
+  }
+  .no-gutters {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 /* Technology Stack */
