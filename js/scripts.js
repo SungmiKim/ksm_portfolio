@@ -1,3 +1,4 @@
+// Main Typing
 $(window).ready(function () {
   var typingBool = false;
   var typingIdx = 0;
@@ -34,10 +35,17 @@ $(window).ready(function () {
     }
   }
 });
+// Main Typing
 
+/*!
+ * Start Bootstrap - Creative v6.0.3 (https://startbootstrap.com/themes/creative)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+ */
 (function ($) {
-  "use strict";
+  "use strict"; // Start of use strict
 
+  // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, "") ==
@@ -59,15 +67,18 @@ $(window).ready(function () {
     }
   });
 
+  // Closes responsive menu when a scroll trigger link is clicked
   $(".js-scroll-trigger").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
 
+  // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
     target: "#mainNav",
     offset: 75,
   });
 
+  // Collapse Navbar
   var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-scrolled");
@@ -75,11 +86,13 @@ $(window).ready(function () {
       $("#mainNav").removeClass("navbar-scrolled");
     }
   };
+  // Collapse now if page is not at top
   navbarCollapse();
-
+  // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  $("#about").magnificPopup({
+  // Magnific popup calls
+  $("#portfolio").magnificPopup({
     delegate: "a",
     type: "image",
     tLoading: "Loading image #%curr%...",
@@ -93,4 +106,4 @@ $(window).ready(function () {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
     },
   });
-})(jQuery);
+})(jQuery); // End of use strict
